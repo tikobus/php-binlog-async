@@ -1,0 +1,35 @@
+{
+    "name": "mogu/mysql-binlog",
+    "description": "MySQL replication-protocol client: register as a replica over amphp/socket and stream/parse binlog events",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["mysql", "binlog", "replication", "replica", "amphp", "async", "cdc"],
+    "authors": [
+        {
+            "name": "mogu"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mogu/mysql-binlog/issues",
+        "source": "https://github.com/mogu/mysql-binlog"
+    },
+    "require": {
+        "php": ">=8.1",
+        "amphp/socket": "^2.0",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "amphp/mysql": "^3.1"
+    },
+    "suggest": {
+        "amphp/mysql": "Needed to run the examples (fetching the current binlog position via a connection pool)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mogu\\Binlog\\": "src/Binlog/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
