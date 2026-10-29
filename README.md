@@ -1,4 +1,4 @@
-# mogu/mysql-binlog
+# tikobus/php-binlog-async
 
 MySQL replication-protocol client for PHP: register your process as a **replica** and stream/parse binlog events in real time — built on [amphp/socket](https://github.com/amphp/socket), no extensions required beyond OpenSSL.
 
@@ -19,14 +19,14 @@ MySQL replication-protocol client for PHP: register your process as a **replica*
 ## Installation
 
 ```bash
-composer require mogu/mysql-binlog
+composer require tikobus/php-binlog-async
 ```
 
 ## Quick start
 
 ```php
-use Mogu\Binlog\BinlogConnection;
-use Mogu\Binlog\BinlogParser;
+use Tikobus\PhpBinlogAsync\BinlogConnection;
+use Tikobus\PhpBinlogAsync\BinlogParser;
 
 Amp\async(function () {
     // 1. Register as a replica. The server-id must be unique across the whole

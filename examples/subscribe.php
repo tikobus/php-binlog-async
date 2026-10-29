@@ -15,9 +15,9 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Amp\Mysql\MysqlConfig;
 use Amp\Mysql\MysqlConnectionPool;
-use Mogu\Binlog\BinlogConnection;
-use Mogu\Binlog\BinlogParser;
-use Mogu\Binlog\EventType;
+use Tikobus\PhpBinlogAsync\BinlogConnection;
+use Tikobus\PhpBinlogAsync\BinlogParser;
+use Tikobus\PhpBinlogAsync\EventType;
 
 $dsn = \getenv('MYSQL_DSN') ?: 'host=127.0.0.1 user=root password= db=test';
 const REPLICA_SERVER_ID = 8101; // 伪装从库的唯一 server-id，不能与主库相同

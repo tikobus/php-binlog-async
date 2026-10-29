@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mogu\Binlog;
+namespace Tikobus\PhpBinlogAsync;
 
 /**
  * binlog 事件类型码（event header 第 5 字节 type_code 的取值）。

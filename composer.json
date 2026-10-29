@@ -1,17 +1,17 @@
 {
-    "name": "mogu/mysql-binlog",
+    "name": "tikobus/php-binlog-async",
     "description": "MySQL replication-protocol client: register as a replica over amphp/socket and stream/parse binlog events",
     "type": "library",
     "license": "MIT",
     "keywords": ["mysql", "binlog", "replication", "replica", "amphp", "async", "cdc"],
     "authors": [
         {
-            "name": "mogu"
+            "name": "tikobus"
         }
     ],
     "support": {
-        "issues": "https://github.com/mogu/mysql-binlog/issues",
-        "source": "https://github.com/mogu/mysql-binlog"
+        "issues": "https://github.com/tikobus/php-binlog-async/issues",
+        "source": "https://github.com/tikobus/php-binlog-async"
     },
     "require": {
         "php": ">=8.1",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mogu\\Binlog\\": "src/Binlog/"
+            "Tikobus\\PhpBinlogAsync\\": "src/"
         }
     },
     "config": {

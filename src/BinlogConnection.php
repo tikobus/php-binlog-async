@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mogu\Binlog;
+namespace Tikobus\PhpBinlogAsync;
 
 use Amp\Socket;
 use RuntimeException;
